@@ -5,6 +5,24 @@
     android:stretchColumns="0" >
 
     <TableRow>
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="1등:"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/ivTop"
+            android:layout_span="2"
+            android:layout_gravity="center"/>
+
+    </TableRow>
+
+    <TableRow>
 
         <TextView
             android:id="@+id/tv1"
@@ -14,11 +32,10 @@
 
         <RatingBar
             android:id="@+id/rbar1"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -31,11 +48,10 @@
 
         <RatingBar
             android:id="@+id/rbar2"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -48,11 +64,10 @@
 
         <RatingBar
             android:id="@+id/rbar3"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -65,11 +80,10 @@
 
         <RatingBar
             android:id="@+id/rbar4"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -82,11 +96,10 @@
 
         <RatingBar
             android:id="@+id/rbar5"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -99,11 +112,10 @@
 
         <RatingBar
             android:id="@+id/rbar6"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -116,11 +128,10 @@
 
         <RatingBar
             android:id="@+id/rbar7"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -133,11 +144,10 @@
 
         <RatingBar
             android:id="@+id/rbar8"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>
@@ -150,11 +160,10 @@
 
         <RatingBar
             android:id="@+id/rbar9"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" >
-        </RatingBar>
+            android:layout_gravity="right"></RatingBar>
     </TableRow>
 
     <TableRow>

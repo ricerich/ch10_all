@@ -3,6 +3,7 @@ package com.example.ex01_picture_vote
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 
@@ -19,13 +20,47 @@ class ResultActivity : AppCompatActivity() {
         var imgNameArr = intent1.getStringArrayExtra("ImageNameArr")
         var voteArr = intent1.getIntArrayExtra("VoteArr")
 
+        //문제풀기: 최대값 구하기 1
+//        var max = 0
+//        var max_index = 0
+//        for(i in 0..voteArr!!.size-1)
+//        {
+//            if(max <voteArr[i]) //최대값과 현재값을 비교해서, 현재값이 크면
+//            {
+//                max = voteArr[i] //최대값을 갱신한다. 현재값으로
+//                max_index = i
+//            }
+//        }
+
+        //문제풀기: 최대값 구하기 2:max없이 구하기
+//        var max = 0
+        var max_index = 0
+        for(i in 0..voteArr!!.size-1)
+        {
+            if(voteArr[max_index] <voteArr[i]) //최대값과 현재값을 비교해서, 현재값이 크면
+            {
+//                max = voteArr[i] //최대값을 갱신한다. 현재값으로
+                max_index = i
+            }
+        }
+
+        var tvTop = findViewById<TextView>(R.id.tvTop)
+        var ivTop = findViewById<ImageView>(R.id.ivTop)
+
+        val imageFileId = arrayOf(R.drawable.pic1, R.drawable.pic2, R.drawable.pic3,
+                                  R.drawable.pic4, R.drawable.pic5, R.drawable.pic6,
+                                  R.drawable.pic7, R.drawable.pic8, R.drawable.pic9)
+
+        tvTop.setText(imgNameArr!![max_index])
+        ivTop.setImageResource(imageFileId[max_index])
+
         //객체 만들고, 바인딩 하는 기본작업 실시
 //        var tv1 = findViewById<TextView>(R.id.tv1)
 //        var tv2 = findViewById<TextView>(R.id.tv2)
 
         var tvIdArr = arrayOf(R.id.tv1, R.id.tv2, R.id.tv3,
-                              R.id.tv3, R.id.tv4, R.id.tv5,
-                              R.id.tv6, R.id.tv7, R.id.tv8 )
+                              R.id.tv4, R.id.tv5, R.id.tv6,
+                              R.id.tv7, R.id.tv8, R.id.tv9 )
         var tvArr = arrayOfNulls<TextView>(9)
         for(i in 0..tvArr.size-1)
             tvArr[i] = findViewById<TextView>(tvIdArr[i])
@@ -51,10 +86,5 @@ class ResultActivity : AppCompatActivity() {
         btnFinish.setOnClickListener {
             finish()
         }
-
-
-
-
-
     }
 }
